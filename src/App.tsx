@@ -3,7 +3,7 @@ import './index.css'
 // import img from "/images/img.jpg"
 import { IoCheckmarkCircleSharp } from 'react-icons/io5'
 import { MdCancel } from 'react-icons/md'
-import { questions, Qust } from '.'
+import { questions } from '.'
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(questions[0]);
   const [start, setStart] = useState(false)
-  const [end, setEnd] = useState("")
+  // const [end, setEnd] = useState("")
 
   useEffect(() => {
     if (start) {
